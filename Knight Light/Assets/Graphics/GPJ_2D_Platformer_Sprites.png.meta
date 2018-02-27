@@ -1,17 +1,17 @@
 fileFormatVersion: 2
 guid: 4a72dcf816175b74398b63e22eeabbe9
-timeCreated: 1519086701
+timeCreated: 1519740753
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: GPJ_2D_Platformer_Sprites_0
-    21300002: GPJ_2D_Platformer_Sprites_1
+    21300002: Enemy_2
     21300004: GPJ_2D_Platformer_Sprites_2
     21300006: GPJ_2D_Platformer_Sprites_3
     21300008: GPJ_2D_Platformer_Sprites_4
     21300010: Spikes
     21300012: GPJ_2D_Platformer_Sprites_6
-    21300014: GPJ_2D_Platformer_Sprites_7
+    21300014: Coin_1
     21300016: GPJ_2D_Platformer_Sprites_8
     21300018: GPJ_2D_Platformer_Sprites_9
     21300020: GPJ_2D_Platformer_Sprites_10
@@ -26,6 +26,8 @@ TextureImporter:
     21300038: Ground
     21300040: Player_Walking_1
     21300042: Player_Walking_2
+    21300044: Enemy_1
+    21300046: Enemy_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -116,20 +118,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GPJ_2D_Platformer_Sprites_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 48
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: GPJ_2D_Platformer_Sprites_2
       rect:
         serializedVersion: 2
@@ -186,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GPJ_2D_Platformer_Sprites_7
+      name: Coin_1
       rect:
         serializedVersion: 2
         x: 32
@@ -203,7 +191,7 @@ TextureImporter:
       name: GPJ_2D_Platformer_Sprites_8
       rect:
         serializedVersion: 2
-        x: 41
+        x: 39
         y: 84
         width: 7
         height: 7
@@ -390,7 +378,7 @@ TextureImporter:
         width: 16
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,6 +388,48 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
+        y: 112
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 112
         width: 16
         height: 12
