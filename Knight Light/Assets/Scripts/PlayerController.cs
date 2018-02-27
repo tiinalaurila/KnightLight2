@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
+    public float moveVelocity;
     public float jumpHeight;
 
     public Transform groundCheck;
@@ -49,15 +50,21 @@ public class PlayerController : MonoBehaviour {
             doubleJumped = true;
         }
 
+        moveVelocity = 0f;
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = moveSpeed;
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = -moveSpeed;
         }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
